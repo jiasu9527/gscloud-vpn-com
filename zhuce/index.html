@@ -1,0 +1,85 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GsCloud注册教程：3 分钟完成注册与订阅导入</title>
+<meta name="description" content="手把手GsCloud注册流程：打开入口、填邮箱、选套餐、导入订阅，含常见报错处理。">
+<link rel="canonical" href="https://gscloud-vpn.com/zhuce/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="application-name" content="GsCloud">
+<meta property="og:type" content="website"><meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="GsCloud"><meta property="og:title" content="GsCloud注册教程：3 分钟完成注册与订阅导入">
+<meta property="og:description" content="手把手GsCloud注册流程：打开入口、填邮箱、选套餐、导入订阅，含常见报错处理。"><meta property="og:url" content="https://gscloud-vpn.com/zhuce/">
+<meta property="og:image" content="https://gscloud-vpn.com/logo.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://www.google.com/s2/favicons?domain=gscloud.sbs&sz=64"><link rel="apple-touch-icon" href="/logo.svg">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" type="application/rss+xml" href="/feed.xml" title="GsCloud">
+<style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:var(--fs)/var(--lh) var(--fb)}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+
+#jb{position:fixed;left:0;right:0;bottom:0;background:var(--bar-bg);color:var(--bar-fg);display:none;align-items:center;gap:10px;padding:10px 14px;font-size:13px;z-index:40}
+#jb.on{display:flex}
+#jb .t{flex:1}
+#jb a{background:var(--c);color:var(--btn-fg);padding:8px 16px;border-radius:var(--r);font-weight:700;white-space:nowrap}
+#jb .x{font-size:19px;opacity:.6;cursor:pointer;padding:0 6px}
+.tb{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.tb th,.tb td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.tb thead th{background:var(--card);font-size:12.5px;letter-spacing:.5px}
+.ok{color:#12a150}.bad{color:#d93434}.mut{color:var(--mut)}
+.btn{display:block;text-align:center;background:var(--c);color:var(--btn-fg);font-weight:800;padding:14px;border-radius:var(--r);letter-spacing:.3px}
+.btn:hover{text-decoration:none;filter:brightness(1.07)}
+.ctawrap{margin:16px 0}.tiny{display:block;font-size:12px;color:var(--mut);margin-top:6px}
+.faq dt{font-weight:700;margin-top:14px}.faq dd{margin:4px 0 0;color:var(--mut)}
+.ft{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:20px 0 34px;text-align:center;line-height:1.9}
+.chl{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}
+.chl a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--fg)}
+.rel{margin-top:26px;border-top:1px solid var(--line);padding-top:6px}
+.rank li{margin-bottom:10px}.rank p{margin:2px 0 0;font-size:13px;color:var(--mut)}
+
+:root{--bg:#f6f2e6;--fg:#111;--mut:#5b5548;--line:#111;--card:#fffdf2;--c:#111;--link:#0b57d0;--btn-fg:#ffe14d;--bar-bg:#111;--bar-fg:#fff;--r:0px;--fs:16px;--lh:1.75;--fb:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+.top{background:#111;color:#ffe14d;font:700 12px/1.5 ui-monospace,Menlo,Consolas,monospace;padding:8px;text-align:center;letter-spacing:1px}
+.hd{border-bottom:3px solid #111}
+.hd .in{max-width:800px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px}
+.hd img{width:26px;height:26px;border:1px solid #111}
+.hd .nm{font:900 17px/1 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:-.5px;text-transform:uppercase}
+.hd .nm small{display:block;font:400 10px/1.6 ui-monospace,Menlo,Consolas,monospace;letter-spacing:0;text-transform:none;color:var(--mut)}
+h1{font:900 30px/1.15 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:-1px;margin:16px 0 6px}
+h2{font:800 15px/1.3 ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:1px;margin:26px 0 8px;border-bottom:2px solid #111;padding-bottom:4px}
+p{margin:0 0 12px}
+.lead{font-size:17px}
+.verify{font:12px/1.5 ui-monospace,Menlo,Consolas,monospace;background:#ffe14d;border:1px solid #111;padding:6px 8px;margin:14px 0}
+.addrbox{border:3px solid #111;background:#fffdf2;box-shadow:5px 5px 0 #111;padding:12px;margin:16px 0}
+.addrhead{font:800 13px/1.4 ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+.addrhead b{float:right;background:#111;color:#ffe14d;padding:1px 7px;font-weight:700}
+.addrbox ul{list-style:none;margin:0;padding:0}
+.addrbox li{display:flex;justify-content:space-between;font:14px/2 ui-monospace,Menlo,Consolas,monospace;border-bottom:1px dotted #111}
+.addrbox li:last-child{border:0}.addrbox em{font-style:normal;font-size:10px;text-transform:uppercase}
+.btn{color:#111;background:#ffe14d;border:3px solid #111;box-shadow:4px 4px 0 #111;font:900 16px/1 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:15px;text-transform:uppercase;letter-spacing:.5px}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 #111}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid #111;margin:10px 0}
+.pc>div{padding:8px 12px;font-size:14px}
+.pc>div:first-child{border-right:2px solid #111}
+.pc h3{margin:2px 0 6px;font:800 12px/1 ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase}
+.pc ul{margin:0;padding-left:16px}
+.dot,.steps{padding-left:18px}
+@media(max-width:560px){.pc{grid-template-columns:1fr}.pc>div:first-child{border-right:0;border-bottom:2px solid #111}}
+
+.kv th{width:98px;font-weight:400;color:var(--mut)}
+.bar{background:var(--line);width:44%}.bar i{display:block;height:8px;background:var(--c)}
+.pro h3{color:#12a150}.con h3{color:#d93434}
+.hero{padding-top:6px}.kick{font:700 11px/1.4 var(--fb);letter-spacing:2px;text-transform:uppercase;color:var(--mut)}
+.hero-cover .kick,.hero-headline .kick{color:var(--c)}
+.cta-big .btn{padding:18px;font-size:17px}
+.cta-inline .btn{display:inline-block;padding:11px 20px}
+</style>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"GsCloud机场官网","alternateName":["GsCloud","GsCloud机场","GSCLOUD","光速云","光速机场","gs"],"url":"https://gscloud-vpn.com/","inLanguage":"zh-CN"},{"@context":"https://schema.org","@type":"Organization","name":"GsCloud","url":"https://gscloud-vpn.com/","logo":"https://gscloud-vpn.com/logo.svg"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GsCloud","item":"https://gscloud-vpn.com/"},{"@type":"ListItem","position":2,"name":"GsCloud 注册教程","item":"https://gscloud-vpn.com/zhuce/"}]}]</script>
+</head><body><div class="top">⚠️ <b>GsCloud</b> 官网域名经常更换 · 本页 2026年11月15日 已核验</div><div class="wrap"><header class="hd"><div class="in"><img src="https://www.google.com/s2/favicons?domain=gscloud.sbs&sz=64" alt="GsCloud logo" width="28" height="28"><div class="nm">GsCloud<small>GsCloud（光速云 / 光速机场）</small></div><nav><a href="/">首页</a><a href="/gongwang">官网地址</a><a href="/youhui">优惠码</a><a href="/pingce">评测</a><a href="/paolu">跑路状态</a></nav></div></header><div class="hero hero-masthead"><div class="kick">GsCloud · 2026年11月15日 核验</div><h1>GsCloud 注册教程</h1></div><p class="lead">GsCloud是近两年被搜得最多的机场品牌之一。它的官方入口经常更换，很多人搜到的其实是仿冒站或者早已停止更新的旧地址，所以这一页把可用入口和最新情况整理在一起。</p>
+<div class="addrbox"><div class="addrhead">GsCloud 可用入口 <b>2026年11月15日 核验</b></div><table class="tb"><tbody><tr><td><a href="https://gscloud.sbs" target="_blank" rel="nofollow noopener">gscloud.sbs</a></td><td>主入口</td><td class="ok">可访问</td></tr><tr><td><a href="https://gscloud.icu" target="_blank" rel="nofollow noopener">gscloud.icu</a></td><td>备用</td><td class="ok">可访问</td></tr><tr><td><a href="https://a.gscloud.sbs" target="_blank" rel="nofollow noopener">a.gscloud.sbs</a></td><td>备用</td><td class="ok">可访问</td></tr><tr><td><a href="https://st-gs.pages.dev" target="_blank" rel="nofollow noopener">st-gs.pages.dev</a></td><td>备用</td><td class="ok">可访问</td></tr></tbody></table></div>
+<p class="verify">本页地址核验于 2026年11月15日，入口均可访问，注册页正常。</p>
+<h2>准备</h2><ul class="dot"><li>一个能收信的邮箱（别用主邮箱）</li><li>可用的网络环境</li><li>对应平台的客户端</li></ul>
+<h2>步骤</h2><ol class="steps"><li>打开本页顶部的最新入口。</li><li>点右上角「注册」，填邮箱和密码，有邀请码就填。</li><li>收邮件验证码，完成验证。</li><li>在套餐页选最小周期，完成支付。</li><li>复制订阅链接，导入客户端，选延迟最低的节点。</li></ol>
+<p class="note">报错「验证码错误」多为邮箱延迟，等 60 秒重发；报错「邀请码无效」可以不填，不影响注册。</p>
+<p class="ctawrap"><a class="btn cta-big" href="/go?u=https%3A%2F%2Fforest-cn.com%2Fregister%3Futm_source%3Dgscloud-vpn.com%26utm_medium%3Dseo%26utm_campaign%3Dgscloud%26utm_content%3Dzhuce%26pos%3Dafter" data-go="https://forest-cn.com/register?utm_source=gscloud-vpn.com&amp;utm_medium=seo&amp;utm_campaign=gscloud&amp;utm_content=zhuce&amp;pos=after" rel="nofollow noopener">打开注册页 <span class="ar">→</span></a><span class="tiny">注册商标同款入口 · 由官方面板提供</span></p>
+<h2>相关问答</h2><dl class="faq"><dt>GsCloud有免费试用吗？</dt><dd>偶尔放体验套餐或优惠码，不稳定。想要稳定体验建议直接买最小月付套餐，试错成本最低。</dd><dt>GsCloud支持几台设备？</dt><dd>多数套餐不严格限制同时在线，但共享账号有被挤下线的风险，建议一人一号。</dd><dt>GsCloud多少钱？</dt><dd>低至 5~7 元，主打不限时流量套餐。具体以官网套餐页为准，本页价格随官方调整。</dd><dt>GsCloud官网是哪个？</dt><dd>目前可用的入口在本页顶部地址栏，gscloud.sbs 是长期入口之一，但会换，建议收藏本页。</dd></dl>
+<nav class="rel"><h2>相关页面</h2><div class="chl"><a href="/">首页</a><a href="/gongwang">官网地址</a><a href="/youhui">优惠码</a><a href="/pingce">评测</a><a href="/paolu">跑路状态</a><a href="/pingti">平替推荐</a><a href="/kehu">客户端</a></div><div class="chl"><a href="https://kokoyun-vpn.com/">可可云</a><a href="https://baigei-vpn.com/">白给云</a></div></nav><footer class="ft"><b>GsCloud</b> · 独立入口页<br>第三方导航页，与官方无隶属关系 · 2026年11月15日 核验<br><a href="https://gscloud-vpn.com/">首页</a> · <a href="/gongwang/">官网地址</a> · <a href="/paolu/">状态</a> · <a href="/daohang/">机场导航</a> · <a href="https://forest-cn.com">Forest</a></footer></div><script src="/r.js"></script></body></html>
